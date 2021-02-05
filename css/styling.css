@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+  
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+   
+    font-size:20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+h1{
+color:white;
+font-weight: bold;
+
+}
+
+#OSI{
+    font-size: 25px;
+}
+
+#headModel{
+
+color:blue;
+font-size: 40px;
+
+}
+#DNS{
+    font-size: 25px;
+
+
+
+}
+#headns{
+
+    color:blue;
+    font-size: 40px;
+        
+
+}
+
+
+#headHardware{
+    color:blue;
+    font-size: 40px;
+   
+
+}
+#hardware{
+    font-size: 30px;
+
+}
+#headport{
+    color:blue;
+    font-size: 40px;  
+}
+#port{
+    font-size: 30px;
+
+}
+#headSoftware{
+    color:blue;
+    font-size: 40px;
+
+}
+#software{
+
+    font-size: 30px;
+}
+
+#tcpudp{
+    font-size: 30px;
+
+}
+#headtcpudp{
+    color:blue;
+    font-size: 40px;
+
+}
